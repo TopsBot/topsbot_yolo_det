@@ -1,0 +1,25 @@
+/**:
+  ros__parameters:
+    input_mode: "tbmem"              # tbmem | sensor_image | file
+    image_topic: "/tbmem_img"
+    image_file: ""                   # file 模式：输入 JPG 路径
+    output_image_file: ""            # file 模式：输出画框 JPG 路径
+    tb_img_profile: "480p"
+    viz_topic: "/yolo_viz"
+    frame_id: "camera"
+    publish_detections: false
+    detections_topic: "/detections"
+    frame_skip: 0
+    enable_profile: true
+
+    preprocess:
+      letterbox: true
+      letterbox_color: [114, 114, 114]
+      auto_input_size: true
+      input_width: 640
+      input_height: 640
+
+    postprocess:
+      confidence_threshold: 0.25
+      nms_threshold: 0.45
+      max_detections: 300

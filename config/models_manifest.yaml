@@ -1,0 +1,12 @@
+# YOLO 模型清单：下载地址与安装目录
+# 替换 models_zip_url 为阿里云盘分享链接后即可使用 download_models.sh
+
+install_dir: "~/topsbot/models"
+
+# 阿里云盘分享链接（请替换 PLACEHOLDER 为实际 share_id）
+models_zip_url: "https://bj25486.apps.aliyunfile.com/disk/s/ZNbnRnSArHj?domainId=bj25486"
+
+# models.zip 根目录包含以下 .nb 文件（解压后直接放入 install_dir）
+required_models:
+  - yolo11s_nv12_float16.nb
+  - yolo26s_nv12_float16.nb
