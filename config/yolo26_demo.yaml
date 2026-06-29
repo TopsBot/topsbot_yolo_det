@@ -1,0 +1,4 @@
+/**:
+  ros__parameters:
+    model_type: "yolo26"
+    model_path: "~/topsbot/models/yolo26s_nv12_float16.nb"
